@@ -1,5 +1,4 @@
-from exception.handler import Handler
-from exception.colors import Colors, Format
+from exception import Handler, Colors, Format
 
 # ALL BOOLEAN SETTINGS ARE FALSE BY DEFAULT,
 # THE DEFAULT PRINT FUNCTION IS 'print()',
