@@ -109,9 +109,9 @@ Check the [`example.py`](example.py) file for a proper example.
 
 ### Modify Colors, Format or Messages
 
-If you want to modify the DataType for format's or colors ANSI, you can do so by modifying the `Format` and `Colors` classes in the [`exception.py`](exception/colors.py) file.
+If you want to modify the DataType for format's or colors ANSI, you can do so by modifying the `Format` and `Colors` classes in the [`exception.py`](colors.py) file.
 
-If you want to add/remove Messages from the dictionary, you can do so by modifying the `Messages` class in the [`messages.py`](exception/messages.py) file.
+If you want to add/remove Messages from the dictionary, you can do so by modifying the `Messages` class in the [`messages.py`](messages.py) file.
 
 ## Dependencies
 
@@ -119,7 +119,7 @@ If you want to add/remove Messages from the dictionary, you can do so by modifyi
 
 ## License
 
-This project is licensed under the MIT License. See the [`LICENSE`](LICENSE) file for details.
+This project is licensed under the MIT License. See the [`LICENSE`](../LICENSE) file for details.
 
 ## Contributing
 

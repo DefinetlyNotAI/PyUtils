@@ -1,4 +1,4 @@
-from exception import Handler, Colors, Format
+from ExceptionHandler import Handler, Colors, Format
 
 # ALL BOOLEAN SETTINGS ARE FALSE BY DEFAULT,
 # THE DEFAULT PRINT FUNCTION IS 'print()',
@@ -48,6 +48,7 @@ def divide_numbers(a, b):
             #       and you want to locally quit for this singular case,
             #       then you HAVE TO explicitly set it to False here.
         )
+        return None
 
 
 # Trigger an exception

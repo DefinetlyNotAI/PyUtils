@@ -2,8 +2,9 @@ import traceback
 import datetime
 import sys
 import re
-from .colors import Colors, Format
-from .messages import GENERIC_MESSAGES
+from ExceptionHandler.colors import Colors, Format
+from ExceptionHandler.messages import GENERIC_MESSAGES
+from TerminalPrint import TPrint
 
 
 class Handler:
@@ -12,7 +13,7 @@ class Handler:
                  trace: bool = False,
                  use_timestamp: bool = False,
                  exit_script: bool = False,
-                 print_function: callable = print,
+                 print_function: callable = TPrint().critical,
                  return_string_rather_than_print: bool = False
                  ):
         # Handler defaults
@@ -94,9 +95,11 @@ class Handler:
                 f"\n{self.trace_text_format}{self.trace_color}{trace_str}{Colors.RESET}"
             )
 
-        if (return_string_rather_than_print is None and self.return_string_rather_than_print) or return_string_rather_than_print:
+        if (
+                return_string_rather_than_print is None and self.return_string_rather_than_print) or return_string_rather_than_print:
             return final_msg
         self.print_function(final_msg)
 
         if (exit_script is None and self.exit_script) or exit_script:
             sys.exit(quit_code)
+        return None

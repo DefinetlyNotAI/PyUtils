@@ -24,7 +24,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-You can check specific usages below, but I advise check the [example script](example/script.py) provided in the `examples` folder.
+You can check specific usages below, but I advise check the [example script](../example/TPrint.py) provided in the `examples` folder.
 
 ### Importing the Classes
 
@@ -155,7 +155,7 @@ tprint.success(f"Hello, {name}!")
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](../LICENSE) file for details.
 
 ## Notes
 
